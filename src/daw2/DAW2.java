@@ -17,8 +17,10 @@ public class DAW2 {
     public static void main(String[] args) {
         // TODO code application logic here
         //Punto test
-        Punto p1= new Punto(5, 20);         
-        Punto p2 = new Punto (100, 25);
+        Punto p1= new Punto(5, 10);         
+        Punto p2 = new Punto (10, 20);
+        Punto p3= new Punto(20, 40);         
+        Punto p4 = new Punto (30, 80);
         //System.out.println(p1);
         /*
         p1.setX(10);
@@ -38,29 +40,47 @@ public class DAW2 {
         System.out.println(c1);*/
         
         
-        Circulo cc1= new Circulo(p1, 50);   
-        System.out.println(cc1);
-        cc1.numFiguras();
-
-        System.out.println("area " + cc1.area());
+//        Circulo cc1= new Circulo(p1, 50);   
+//        System.out.println(cc1);
+//        cc1.numFiguras();
+//
+//        System.out.println("area " + cc1.area());
+//        
+//        Triangulo t1 = new Triangulo(p1, 5, 3);
+//        t1.numFiguras();
+//
+//        System.out.println(t1);
+//        System.out.println("perimetro " + t1.perimetro());
+//        
+//        Rectangulo r1 = new Rectangulo(p1, 10, 5);
+//        System.out.println(r1);
+//
+//        r1.escalar(5);
+//        System.out.println(r1);
+//
+//        r1.numFiguras();
+//        System.out.println("Hay " + cc1.numFiguras() + " figuras");
+//        
+//        Segmento s1 = new Segmento(p1, p2);
+//        System.out.println(s1);
         
-        Triangulo t1 = new Triangulo(p1, 5, 3);
-        t1.numFiguras();
-
-        System.out.println(t1);
-        System.out.println("perimetro " + t1.perimetro());
+        Segmento s1 = new Segmento(p1, p2);
+        Segmento s2 = new Segmento(p3, p4);
+//        System.out.println(s1);
+//        System.out.println(s2);
         
-        Rectangulo r1 = new Rectangulo(p1, 10, 5);
+        Rectangulo2 r1 = new Rectangulo2(s1,s2);
         System.out.println(r1);
-
-        r1.escalar(5);
-        System.out.println(r1);
-
-        r1.numFiguras();
-        System.out.println("Hay " + cc1.numFiguras() + " figuras");
-
-
-
+        
+//        System.out.println(r1.area());
+//        System.out.println(r1.perimetro());
+        r1.escalar(10);
+        System.out.println(r1);      
+        
+//        
+////        s1.DesplazarSeg(10, 5);
+////        System.out.println(s1);       
+//        System.out.println(s1.LongitudSeg());        
     }
        
 }

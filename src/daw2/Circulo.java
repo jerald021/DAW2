@@ -9,11 +9,11 @@ package daw2;
  *
  * @author jerald
  */
-public class Circulo extends Figura{
+public class Circulo extends Figura implements interfazString {
     private int radio;
     
     public Circulo(Punto origen, int radio){
-        super.Figura(origen);
+        super(origen);
         this.radio = radio;
     }    
 
@@ -35,6 +35,11 @@ public class Circulo extends Figura{
     @Override
     public String toString() {
         return "El radio del circulo es "+ this.radio;
+    }
+    
+    @Override
+    public String imprimir() {
+        return this.origen.toString();
     }
     
     

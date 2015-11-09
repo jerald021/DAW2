@@ -13,7 +13,7 @@ public class Cuadrado extends Figura{
     protected double ancho;
     
     public Cuadrado(Punto origen, double ancho){
-        super.Figura(origen);
+        super(origen);
         this.ancho = ancho;
     }  
     

@@ -14,7 +14,7 @@ public class Triangulo extends Figura{
     private int altura;
     
     public Triangulo (Punto Origen, int base, int altura){
-        super.Figura(Origen);
+        super(Origen);
         this.base = base;
         this.altura = altura;
     }   
